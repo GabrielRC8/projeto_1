@@ -164,7 +164,7 @@
 '''frase = str(input('Digite seu nome: ')).strip()
 print(frase.upper())#tudo em maiscula
 print(frase.lower())#tudo em minusculo
-print('seu nome tem ao todo {} letras'.format(len(frase) - frase.count(' ')))#quantos caracteres tirando todos os espaçoes
+print('seu nome tem ao todo {} letras'.format(len(frase) - frase.count(' ')))quantos caracteres tirando todos os espaçoes
 
 spl = frase.split()#criando menu na frase
 print(len(spl[0]))#caracteres da primeira palavra da frase, criando um menu e pegando os caracteres'''
@@ -215,12 +215,29 @@ else:
 
 #exercicio_29
 
-#testando_git_merge
+'''velocidade = int(input(" A velocidade permitida é 80Km, Qual Foi a velocidade medida ? "))
+valorMulta = 7
 
-#sitema_de_login_criado
+if velocidade > 80:
+    print("Você foi multado !! . \n  O valor da multa é: R$:{}".format((velocidade-80)*valorMulta))
+else:
+    print("Boa Viagem")'''
 
+#exercicio_30
+'''
+number = int(input("Digite um numero : "))
 
+if number/2 == 0:
+    print("este numero é par !! ")
+else:
+    print("este numero é ímpar")'''
 
+#exercicio_31
+kilos = int(input("Qual a distancia da viagem em Km ?"))
 
-
-
+km1 = 0.50
+km2 = 0.45
+if kilos <= 200:
+     print("sua viagem custara: R${:.2f} Reais".format(km1*kilos))
+else:
+    print("sua viagem custara: R${:.2f} Reais".format(km2*kilos))
