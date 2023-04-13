@@ -233,11 +233,27 @@ else:
     print("este numero é ímpar")'''
 
 #exercicio_31
-kilos = int(input("Qual a distancia da viagem em Km ?"))
+'''kilos = int(input("Qual a distancia da viagem em Km ?"))
 
 km1 = 0.50
 km2 = 0.45
 if kilos <= 200:
      print("sua viagem custara: R${:.2f} Reais".format(km1*kilos))
 else:
-    print("sua viagem custara: R${:.2f} Reais".format(km2*kilos))
+    print("sua viagem custara: R${:.2f} Reais".format(km2*kilos))'''
+
+#exercicio_32
+
+data = int(input("Informe a data que deseja saber se o ano é bissexto ou não !!"))
+data_res = 0
+
+if data % 4 == 0:
+    data_res = 0
+if data % 100 == 0 and data % 400 == 0:
+    print("Este ano é bissexto !")
+else:
+    print("Este ano não é bissexto ! ")
+
+
+
+
