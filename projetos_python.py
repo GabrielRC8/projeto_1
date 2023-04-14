@@ -245,12 +245,10 @@ else:
 #exercicio_32
 
 data = int(input("Informe a data que deseja saber se o ano é bissexto ou não !!"))
-data_res = 0
 
-if data % 4 == 0:
-    data_res = 0
-if data % 100 == 0 and data % 400 == 0:
-    print("Este ano é bissexto !")
+
+if data % 4 == 0 and data % 100 == 0 and data % 400 == 0:
+    print("Este ano é bissexto ")
 else:
     print("Este ano não é bissexto ! ")
 
