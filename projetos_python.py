@@ -247,11 +247,23 @@ else:
 data = int(input("Informe a data que deseja saber se o ano é bissexto ou não !!"))
 
 
-if data % 4 == 0 and data % 100 == 0 and data % 400 == 0:
+if data % 4 == 0 and data % 100 != 0 or data % 400 == 0:
     print("Este ano é bissexto ")
 else:
     print("Este ano não é bissexto ! ")
 
 
+#exercicio_33
+'''num1 = int(input("Escolha um numero : "))
+num2 = int(input("Escolha outro numero : "))
+num3 = int(input("Escolha o terceiro numero : "))
 
+if num1 > num2 or num1 > num3:
+    print("numero {} é o maior ".format(num1))
+
+elif num2 > num1 or num2 > num3:
+    print("numero {} é o maior ".format(num2))
+
+elif num3 > num1 or num3 > num2:
+    print("numero {} é o maior ".format(num3))'''
 
