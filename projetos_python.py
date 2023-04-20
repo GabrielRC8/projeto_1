@@ -191,7 +191,7 @@ res = name.split()
 print('seu primeiro nome é :{} ' .format(res[0]))
 print('seu segundo o nome é :{} ' .format(res[2]))'''
 
-#CONDIÇÕES AULA 10
+#CONDIÇÕES AULA 10_
 
 '''nome = str(input('Qual é seu nome: '))
 if nome == 'Gabriel':
@@ -199,7 +199,7 @@ if nome == 'Gabriel':
 else:
     print('Você é um frango kkkk')'''
 
-#exercicio_28
+#exercicio_28_ sorteio_ de_numeros
 '''from random import choice
 number = choice([0, 1, 2, 3, 4, 5])
 print(number)
@@ -213,7 +213,7 @@ else:
 
 #teste_segundo_commit_2
 
-#exercicio_29
+#exercicio_29_multa _de_velocidade
 
 '''velocidade = int(input(" A velocidade permitida é 80Km, Qual Foi a velocidade medida ? "))
 valorMulta = 7
@@ -223,7 +223,7 @@ if velocidade > 80:
 else:
     print("Boa Viagem")'''
 
-#exercicio_30
+#exercicio_30_mosntrnado se o numero é impar ou par
 '''
 number = int(input("Digite um numero : "))
 
@@ -232,17 +232,18 @@ if number/2 == 0:
 else:
     print("este numero é ímpar")'''
 
-#exercicio_31
+#exercicio_31_ calculando custo de viagem por km rodado
 '''kilos = int(input("Qual a distancia da viagem em Km ?"))
 
 km1 = 0.50
 km2 = 0.45
 if kilos <= 200:
+    
      print("sua viagem custara: R${:.2f} Reais".format(km1*kilos))
 else:
     print("sua viagem custara: R${:.2f} Reais".format(km2*kilos))'''
 
-#exercicio_32
+#exercicio_32_ calculado ano bissexto
 
 '''data = int(input("Informe a data que deseja saber se o ano é bissexto ou não !!"))
 
@@ -253,11 +254,39 @@ else:
     print("Este ano não é bissexto ! ")'''
 
 
-#exercicio_33
+''''#exercicio_33_lendo tras numeros e mosntrando qual menor e maior
 num1 = int(input("Escolha um numero : "))
 num2 = int(input("Escolha outro numero : "))
 num3 = int(input("Escolha o terceiro numero : "))
 res = sorted([num1,num2,num3])
 
 print("o numero maior é:{}".format(res[2]))
-print("o numero menor é: {}".format(res[0]))
+print("o numero menor é: {}".format(res[0]))'''
+
+#exercicio_34__(ajsute de salario em 10 e 15 %
+
+'''sal = float(input('Qual é seu salario atual: '))
+
+sal_10 = 10 * sal / 100
+sal_15 = 15 * sal / 100
+
+print(sal_10)
+print(sal_15)
+
+if sal >= 1250:
+    print("Seu Salario novo ajustado é de : R${:.2f}".format(sal + sal_10))
+elif sal < 1250:
+    print("Seu Salario novo ajustado é de : R${:.2f}".format(sal + sal_15))
+else:
+    print('nada')'''
+
+#exercicio_35_colentando_3_medidas_e_verificar_se_as_mesmas_forma_um_triangulo
+'''
+med1 = float(input('Digite a primeira medida'))
+med2 = float(input('Digite a segunda medida'))
+med3 = float(input('Digite a terceira medida'))
+
+if med1 < med2+med3 and med2 < med1+med3 and med3 < med1+med2:
+    print('Conseguimos fazer o triangulo')
+else:
+    print('Não Conseguimos criar o triangulo :(')'''
