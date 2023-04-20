@@ -290,3 +290,21 @@ if med1 < med2+med3 and med2 < med1+med3 and med3 < med1+med2:
     print('Conseguimos fazer o triangulo')
 else:
     print('Não Conseguimos criar o triangulo :(')'''
+
+#AULA_12_CONDIÇÕES_ANINHADAS
+
+#exercicio_36_ arpovando emprestimo em base dos 30% do salario e em quanto tempo
+print('=' * 20)
+print('Bem Vindo a Crefisa Emprestimos House')
+print('=' * 20)
+
+valor = float(input('Digite o Valor do imovel que deseja adquirir : '))
+salario = float(input('Digite Seu salario liquido : '))
+ano = int(input('Digite em quantos anos desejar pagar: '))
+porc_sal = (30 * salario) / 100
+
+if valor / ano  <  porc_sal:#3.600
+    print('Seu emprestimo esta aprovado !!')
+else:
+    print('Crédito reprovado !!!')
+
