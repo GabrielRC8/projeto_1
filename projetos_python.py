@@ -167,7 +167,8 @@ print(frase.lower())#tudo em minusculo
 print('seu nome tem ao todo {} letras'.format(len(frase) - frase.count(' ')))quantos caracteres tirando todos os espaçoes
 
 spl = frase.split()#criando menu na frase
-print(len(spl[0]))#caracteres da primeira palavra da frase, criando um menu e pegando os caracteres'''
+print(len(spl[0]))#caracteres da primeira palavra da frase, criando um menu e pegando os caracteres
+import datetime'''
 
 #ex:23
 #criar um programa que leia uma sequecia de 4 numero e o divida em 4.
@@ -294,6 +295,7 @@ else:
 #AULA_12_CONDIÇÕES_ANINHADAS
 
 #exercicio_36_ arpovando emprestimo em base dos 30% do salario e em quanto tempo
+'''
 print('=' * 20)
 print('Bem Vindo a Crefisa Emprestimos House')
 print('=' * 20)
@@ -307,4 +309,199 @@ if valor / ano  <  porc_sal:#3.600
     print('Seu emprestimo esta aprovado !!')
 else:
     print('Crédito reprovado !!!')
+'''
+#exercicio_37
 
+'''
+
+
+number = int(input('Digite o numero que deseja converter : '))
+opcao = int(input('Digite 1 para conversão em BINARIO \n''Digite 2 para conversão em OCTAL''\nDigite 3 para conversão em HEXADECIMAL\n''--> :'))
+quociente = 1
+res_binario = []
+
+
+if opcao == 1:
+    while quociente >= 1:
+        resto = number % 2
+        res_binario.insert(0, resto)
+        quociente = number // 2
+        number = quociente
+
+print(res_binario)
+
+
+
+
+#exercicio_38
+
+number1 = int(input('Digite um numero : '))
+number2 = int(input('Digite outro numero : '))
+
+if number1 > number2:
+    print('O primeiro valor é maior')
+elif number2 > number1:
+    print('O segundo valor é maior ')
+else:
+    print('Não existe valor maior, os dois são iguais')
+#exercicio_39
+
+import datetime
+data = int(input('Informe sua ano de nascimento com 4 digitos  : '))
+date_now = datetime.datetime.now().date().year
+if date_now - data < 18:
+    dataFal = date_now - data
+    print('Calma gafanhoto ainda nao é sua hora !!, falta {}'.format(18- dataFal))
+
+elif date_now - data == 18:
+    print('Já é a hora de se alistar')
+
+elif date_now - data > 18:
+    temp = date_now - data
+    temp1 = temp - 18
+    print('Já passou seu tempo de se alistar, Já passou : {} ano(s) '.format(temp1))
+
+#exercicio_40
+
+
+nota1 = float(input('Digite a primeira nota: '))
+nota2 = float(input('Digite a segunda nota: '))
+res = (nota1+nota2)/2
+print(res)
+
+if res >= 7:
+    print('Você esta aprovado !!')
+
+elif res <= 4.9:
+    print('Você esta reprovado !!')
+
+elif res >=5 or 6.9:
+    print('Você esta recuperação !!')
+
+#exercicio_ 41
+import datetime
+ano = int(input('Digite o ano de nascimento: '))
+data_res = datetime.datetime.now().date().year - ano
+
+if data_res >= 9:
+ print('Sua categoria será mirim')
+
+elif data_res >= 14:
+ print('Sua categoria será infantil')
+
+elif data_res >= 19:
+ print('Sua categoria será junior')
+
+elif data_res>= 20:
+ print('Sua categoria será senior')
+
+elif data_res > 21:
+ print('Sua categoria será master')
+
+#exercicio_42_ listar resultados de possiveis triangulos equilatero ou isosceles ou escaleno
+
+med1 = float(input('Digite a primeira medida'))
+med2 = float(input('Digite a segunda medida'))
+med3 = float(input('Digite a terceira medida'))
+
+if med1 < med2+med3 and med2 < med1+med3 and med3 < med1+med2:
+    print('Conseguimos fazer o triangulo')
+
+    if med1 and med2 and med3 == med1 and med2 and med3:
+        print('Todos os lados do trianguo são iguais')
+    elif med1 == med2 or med1 == med3 and med2 == med3:
+        print('dois lados são iguais')
+    elif med1 != med2 and med2 != med3:
+        print('todos os lados são diferentes')
+else:
+    print('Não Conseguimos criar o triangulo :(')
+
+#exercicio_43 _ calculando massa corporal
+
+
+peso = float(input('Digite seu peso: '))
+altura = float(input('Digite sua altura: '))
+res = float(format(peso / (altura*altura), '.2f'))
+
+print(res)
+
+if res < 18.4:
+    print('Voce esta abaixo do peso ! ')
+
+elif res >= 18.5 and res <= 25:
+    print('Peso ideal !')
+
+elif res >= 25 and res <= 30:
+    print('Sobre peso !')
+
+elif res >= 30 and res <= 40:
+        print('obesidade !')
+
+elif res > 40:
+    print('obesidade morbida !')
+else:
+    print('nada')
+
+
+#exercicio_43
+
+valor_preco = float(input('Digite o valor do produto R$ :'))
+print(' ' * 2)
+form_pag = int(input('Pagamento em dinheiro ou cheque a vista " 1 "\n Pagamento cartão de débito "2"\n pagamento no cartão de credito "3"'))
+
+if form_pag == 1:
+    desc_10 = (10 * valor_preco) / 100
+    print('O valor a vista dinheiro ou cheque ficara R${:.2f} reais '.format(valor_preco - desc_10))
+elif form_pag == 2:
+    desc_5 = (5 * valor_preco) / 100
+    print('O valor a vista no cartão ficara R${:.2f} reais '.format(valor_preco - desc_5))
+    
+
+elif form_pag == 3:
+    parcelas = int(input('Parcelas ?'))
+    if parcelas >=3:
+        juros = (20*valor_preco)/ 100
+        print('O valor do parcelado em {} ficara por R$ {}'.format(parcelas, valor_preco+juros))
+    else:
+        print('O valor do produto no cartão ficara {}'.format(valor_preco))
+'''
+#exercicio_45
+
+from random import randint
+from time import sleep
+itens = ['pedra','papel','tesoura']
+computador = randint(0, 2)
+print('Suas ações \npedra[0]\npapel[1]\ntesoura[2]\n')
+print(computador)
+acao = int(input('Qual sua jogada ?\n'))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PÔ')
+sleep(1)
+print('=' * 10)
+
+if computador == 0:
+    if acao == 1:
+        print('você ganhou')
+    elif acao == 2:
+        print('você perdeu')
+    else:
+        print('Empate')
+
+if computador == 1:
+    if acao == 2:
+        print('você ganhou')
+    elif acao == 0:
+        print('você perdeu')
+    else:
+        print('Empate')
+
+if computador == 2:
+    if acao == 1:
+        print('você ganhou')
+    elif acao == 0:
+        print('você perdeu')
+    else:
+        print('Empate')
