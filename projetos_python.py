@@ -1,3 +1,5 @@
+'''
+
 #nome = 'gabriel'
 #sobrenome = 'costa'
 #idade = 30
@@ -160,15 +162,17 @@
 #sort =choice([aluno1, aluno2, aluno3, aluno4])
 #print('O aluno que ira apagar o quadro hoje é : {}' .format(sort))
 
+
+
 #ex:22
-'''frase = str(input('Digite seu nome: ')).strip()
+frase = str(input('Digite seu nome: ')).strip()
 print(frase.upper())#tudo em maiscula
 print(frase.lower())#tudo em minusculo
 print('seu nome tem ao todo {} letras'.format(len(frase) - frase.count(' ')))quantos caracteres tirando todos os espaçoes
 
 spl = frase.split()#criando menu na frase
 print(len(spl[0]))#caracteres da primeira palavra da frase, criando um menu e pegando os caracteres
-import datetime'''
+import datetime
 
 #ex:23
 #criar um programa que leia uma sequecia de 4 numero e o divida em 4.
@@ -176,32 +180,32 @@ import datetime'''
 #criar um programa que fala se o primeiro nome comeca com santo
 #ex:25
 #criar um programa que mostre se tem silva no nome
-'''name = input('digite seu nome: ')
-print(name.find('silva'))'''
+name = input('digite seu nome: ')
+print(name.find('silva'))
 
 #ex:26
 #escreve uma frase e pesquisar quantas vezes aparece a letra a,em que posição ela aparece a primeira vez,e ultima vez
-'''name = input('escreva sua frase : ')
+name = input('escreva sua frase : ')
 res = name.count('a')
 print('quantidade de "A" que sua frase tem é de : {}' .format(res))
-print(name.find('a'))'''
+print(name.find('a'))
 #ex:27
 #faça o programa que leia nome completo e mostre o primeiro nome e ultimo.
-''' name = input('insira seu nome: ')
+name = input('insira seu nome: ')
 res = name.split()
 print('seu primeiro nome é :{} ' .format(res[0]))
-print('seu segundo o nome é :{} ' .format(res[2]))'''
+print('seu segundo o nome é :{} ' .format(res[2]))
 
 #CONDIÇÕES AULA 10_
 
-'''nome = str(input('Qual é seu nome: '))
+nome = str(input('Qual é seu nome: '))
 if nome == 'Gabriel':
     print('Você Gabriel é um gostoso')
 else:
-    print('Você é um frango kkkk')'''
+    print('Você é um frango kkkk')
 
 #exercicio_28_ sorteio_ de_numeros
-'''from random import choice
+from random import choice
 number = choice([0, 1, 2, 3, 4, 5])
 print(number)
 number_es = int(input('Digite um numero de 0 a 5 e adivinhe qual numero a maquina escolheu ?'))
@@ -209,32 +213,32 @@ number_es = int(input('Digite um numero de 0 a 5 e adivinhe qual numero a maquin
 if number == number_es:
     print('Parabens Você adivinhou o numero escolhido pelo computador !! S2')
 else:
-   print(' Você Falhou :(, tente novamente !!')'''
+   print(' Você Falhou :(, tente novamente !!')
 #testando-git
 
 #teste_segundo_commit_2
 
 #exercicio_29_multa _de_velocidade
 
-'''velocidade = int(input(" A velocidade permitida é 80Km, Qual Foi a velocidade medida ? "))
+velocidade = int(input(" A velocidade permitida é 80Km, Qual Foi a velocidade medida ? "))
 valorMulta = 7
 
 if velocidade > 80:
     print("Você foi multado !! . \n  O valor da multa é: R$:{}".format((velocidade-80)*valorMulta))
 else:
-    print("Boa Viagem")'''
+    print("Boa Viagem")
 
 #exercicio_30_mosntrnado se o numero é impar ou par
-'''
+
 number = int(input("Digite um numero : "))
 
 if number/2 == 0:
     print("este numero é par !! ")
 else:
-    print("este numero é ímpar")'''
+    print("este numero é ímpar")
 
 #exercicio_31_ calculando custo de viagem por km rodado
-'''kilos = int(input("Qual a distancia da viagem em Km ?"))
+kilos = int(input("Qual a distancia da viagem em Km ?"))
 
 km1 = 0.50
 km2 = 0.45
@@ -242,31 +246,31 @@ if kilos <= 200:
     
      print("sua viagem custara: R${:.2f} Reais".format(km1*kilos))
 else:
-    print("sua viagem custara: R${:.2f} Reais".format(km2*kilos))'''
+    print("sua viagem custara: R${:.2f} Reais".format(km2*kilos))
 
 #exercicio_32_ calculado ano bissexto
 
-'''data = int(input("Informe a data que deseja saber se o ano é bissexto ou não !!"))
+data = int(input("Informe a data que deseja saber se o ano é bissexto ou não !!"))
 
 
 if data % 4 == 0 and data % 100 != 0 or data % 400 == 0:
     print("Este ano é bissexto ")
 else:
-    print("Este ano não é bissexto ! ")'''
+    print("Este ano não é bissexto ! ")
 
 
-''''#exercicio_33_lendo tras numeros e mosntrando qual menor e maior
+#exercicio_33_lendo tras numeros e mosntrando qual menor e maior
 num1 = int(input("Escolha um numero : "))
 num2 = int(input("Escolha outro numero : "))
 num3 = int(input("Escolha o terceiro numero : "))
 res = sorted([num1,num2,num3])
 
 print("o numero maior é:{}".format(res[2]))
-print("o numero menor é: {}".format(res[0]))'''
+print("o numero menor é: {}".format(res[0]))
 
 #exercicio_34__(ajsute de salario em 10 e 15 %
 
-'''sal = float(input('Qual é seu salario atual: '))
+sal = float(input('Qual é seu salario atual: '))
 
 sal_10 = 10 * sal / 100
 sal_15 = 15 * sal / 100
@@ -279,10 +283,10 @@ if sal >= 1250:
 elif sal < 1250:
     print("Seu Salario novo ajustado é de : R${:.2f}".format(sal + sal_15))
 else:
-    print('nada')'''
+    print('nada')
 
 #exercicio_35_colentando_3_medidas_e_verificar_se_as_mesmas_forma_um_triangulo
-'''
+
 med1 = float(input('Digite a primeira medida'))
 med2 = float(input('Digite a segunda medida'))
 med3 = float(input('Digite a terceira medida'))
@@ -290,12 +294,12 @@ med3 = float(input('Digite a terceira medida'))
 if med1 < med2+med3 and med2 < med1+med3 and med3 < med1+med2:
     print('Conseguimos fazer o triangulo')
 else:
-    print('Não Conseguimos criar o triangulo :(')'''
+    print('Não Conseguimos criar o triangulo :(')
 
 #AULA_12_CONDIÇÕES_ANINHADAS
 
 #exercicio_36_ arpovando emprestimo em base dos 30% do salario e em quanto tempo
-'''
+
 print('=' * 20)
 print('Bem Vindo a Crefisa Emprestimos House')
 print('=' * 20)
@@ -305,30 +309,28 @@ salario = float(input('Digite Seu salario liquido : '))
 ano = int(input('Digite em quantos anos desejar pagar: '))
 porc_sal = (30 * salario) / 100
 
-if valor / ano  <  porc_sal:#3.600
-    print('Seu emprestimo esta aprovado !!')
+if valor / (ano * 12) <=  porc_sal:#3.600
+
+    print('Seu emprestimo esta aprovado !!, sua parcela sera no valor de R$ {:.2f}'.format(valor / (ano * 12)))
 else:
     print('Crédito reprovado !!!')
-'''
+
 #exercicio_37
 
-'''
+
 
 
 number = int(input('Digite o numero que deseja converter : '))
 opcao = int(input('Digite 1 para conversão em BINARIO \n''Digite 2 para conversão em OCTAL''\nDigite 3 para conversão em HEXADECIMAL\n''--> :'))
-quociente = 1
-res_binario = []
-
 
 if opcao == 1:
-    while quociente >= 1:
-        resto = number % 2
-        res_binario.insert(0, resto)
-        quociente = number // 2
-        number = quociente
-
-print(res_binario)
+    print('O numero {} em BINARIO é :{} '.format(number, bin(number)[2:]))
+elif opcao == 2:
+    print('O numero {} em OCTAL é :{} '.format(number, oct(number)[2:]))
+elif opcao == 3:
+    print('O numero {} em HEXADECIMAL é :{} '.format(number, hex(number)[2:]))
+else:
+    print('Tente novamente')
 
 
 
@@ -344,6 +346,7 @@ elif number2 > number1:
     print('O segundo valor é maior ')
 else:
     print('Não existe valor maior, os dois são iguais')
+
 #exercicio_39
 
 import datetime
@@ -464,7 +467,6 @@ elif form_pag == 3:
         print('O valor do parcelado em {} ficara por R$ {}'.format(parcelas, valor_preco+juros))
     else:
         print('O valor do produto no cartão ficara {}'.format(valor_preco))
-'''
 #exercicio_45
 
 from random import randint
@@ -505,3 +507,42 @@ if computador == 2:
         print('você perdeu')
     else:
         print('Empate')
+
+#aula_13_ estrutura for
+for c in range(0, 20, 2) :
+    print(c)
+'''
+'''
+i = int(input('Digite o numero de inicio: '))
+f = int(input('Digite o numero de fim: '))
+p = int(input('Digite o numero de passo(s): '))
+for c in range(i, f, p):
+    print(c)
+print('FIM')
+
+
+#exercicio_46_ contagem regressiva de 10 a 0.
+
+from time import sleep
+i = int(input('Digite o numero de inicio: '))
+f = int(input('Digite o numero de fim: '))
+
+for c in range(10, -1, -1):
+    print(sleep(1), c)
+print('Feliz ano novo !!, Fogos !!')
+
+#exercicio_47_ numeros pares de 1 a 50
+
+for c in range(2, 51, 2):
+    print(c)
+
+#exercicio_48
+
+s = 0
+for c in range(1, 501, 2):
+    if c% 3 == 0:
+        s += c
+print(s)
+'''
+#exercicio 49
+
